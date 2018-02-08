@@ -13,7 +13,7 @@ let LiveReloadPlugin = require('webpack-livereload-plugin');
  */
 
 mix.js('src/main.js', 'public/')
-   .sass('src/assets/sass/main.scss', 'public/')
+   .sass('src/sass/main.scss', 'public/')
    .copy('src/index.html', 'public/')
    .setPublicPath('public')
    .webpackConfig({
