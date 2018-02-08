@@ -1,12 +1,21 @@
 
 .company {
+    margin-top: 100px;
     padding: 0 15px;
     .content {
         display: flex;
         flex-direction: column-reverse;
 
+        .text {
+            margin-bottom: 50px;
+            h2, p {
+                margin-bottom: 20px;
+            }
+        }
+
         .image-container {
             text-align: center;
+            margin-bottom: 50px;
             img {
                 max-width: 50%;
                 border-radius: 50%;
@@ -36,4 +45,55 @@
         }
     }
 
+    @include breakpoint (tablet) {
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 150px;
+        .content {
+            flex-direction: row;
+        }
+
+        .awards {
+            .logos {
+                max-width: 70%;
+                margin-left: auto;
+                .logo {
+                    width: 25%;
+                }
+            }
+        }
+    }
+
+    @include breakpoint (desktop) {
+        margin-top: 0;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+
+        .content {
+            flex: 1;
+            align-items: center;
+
+            .text {
+                flex: 1;
+            }
+
+            .image-container {
+                max-width: 400px;
+            }
+        }
+
+        .awards {
+            width: 1000px;
+            margin: 0 auto;
+            .logos {
+                display: flex;
+                justify-content: space-around;
+                .logo {
+                    max-width: 120px;
+                }
+            }
+        }
+
+    }
 }

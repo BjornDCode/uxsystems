@@ -10,10 +10,11 @@
                 <h2>{{ headline }}</h2>
                 <p>{{ subheader }}</p>
                 <a :href="linkedIn.url" class="button">{{ linkedIn.text }}</a>
+                <!-- <a href="#" class="button">LinkedIn</a> -->
             </div>
         </div>
         <div class="awards">
-            <h3>Awards</h3>
+            <h2>Awards</h2>
             <ul class="logos">
                 <li class="logo" v-for="logo in logos">
                     <img :src="logo.logo.url" :alt="logo.logo.alt">
