@@ -8,7 +8,9 @@
             <h3>Clients &amp; Projects</h3>
             <ul class="logos">
                 <li class="logo" v-for="logo in logos">
-                    <img :src="logo.logo.url" :alt="logo.logo.alt">                    
+                    <a :href="logo.link.url">
+                        <img :src="logo.logo.url" :alt="logo.logo.alt">                    
+                    </a>
                 </li>
             </ul>
         </div>

@@ -3,22 +3,26 @@
         <div class="content">
             <div class="image-container">
                 <img :src="image" alt="Martin Schultz">
-                <span>{{ name }}</span>
-                <span>{{ jobTitle }}</span>
+                <span>Martin Schultz</span>
+                <span>Managing Partner, UX Systems</span>
                 <span><a href="tel:45-26-15-61-23" class="link">+45 26 15 61 23</a></span>
                 <span><a href="mailto:ms@ux.systems" class="link">ms@ux.systems</a></span>
             </div>
             <div class="text">
                 <h2>{{ headline }}</h2>
                 <p>{{ subheader }}</p>
-                <a href="https://www.linkedin.com/in/martinschultz/" class="link-button link">{{ linkedIn.text }}</a>
+                <a href="https://www.linkedin.com/in/martinschultz/" class="link-button link">
+                    LinkedIn profile &amp; recommendations
+                </a>
             </div>
         </div>
         <div class="awards">
             <h2>Industry recognition</h2>
             <ul class="logos">
                 <li class="logo" v-for="logo in logos">
-                    <img :src="logo.logo.url" :alt="logo.logo.alt">
+                    <a :href="logo.link.url">
+                        <img :src="logo.logo.url" :alt="logo.logo.alt">
+                    </a>
                 </li>
             </ul>
         </div>
@@ -45,28 +49,11 @@
                 return this.data.image.url;
             },
 
-            name() {
-                if (!this.data) return;
-                return this.data.name[0].text;
-            },
-
-            jobTitle() {
-                if (!this.data) return;
-                return this.data['job-title'][0].text;
-            },
-
             logos() {
                 if (!this.data) return;
                 return this.data.logos;
             },
 
-            linkedIn() {
-                if (!this.data) return {};
-                return {
-                    url: this.data['linked-in'].url,
-                    text: this.data['linked-in-text'][0].text
-                }
-            }
         }
     }
 </script>
