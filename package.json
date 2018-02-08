@@ -1,0 +1,19 @@
+{
+  "name": "uxsystems",
+  "version": "1.0.0",
+  "description": "Company website fro ux.systems",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BjornDCode/uxsystems.git"
+  },
+  "author": "Bjørn Lindholm",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/BjornDCode/uxsystems/issues"
+  },
+  "homepage": "https://github.com/BjornDCode/uxsystems#readme"
+}
