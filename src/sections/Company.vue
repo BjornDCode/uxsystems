@@ -11,8 +11,7 @@
             <div class="text">
                 <h2>{{ headline }}</h2>
                 <p>{{ subheader }}</p>
-                <a :href="linkedIn.url" class="link-button link">{{ linkedIn.text }}</a>
-                <!-- <a href="#" class="button">LinkedIn</a> -->
+                <a href="https://www.linkedin.com/in/martinschultz/" class="link-button link">{{ linkedIn.text }}</a>
             </div>
         </div>
         <div class="awards">

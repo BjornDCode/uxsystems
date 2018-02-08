@@ -3,11 +3,11 @@
         <div class="logo">
             <img src="uxsystems.JPG" alt="UX Systems">
         </div>
-        <nav>
+        <!-- <nav>
             <a href="#company" v-smooth-scroll>Company</a>
             <a href="#">Services</a>
             <a href="#">Contact</a>
-        </nav>
+        </nav> -->
     </header>
 </template>
 

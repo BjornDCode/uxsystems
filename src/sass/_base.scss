@@ -38,6 +38,14 @@ h3 {
     text-align: center;
 }
 
+h4 {
+    color: $color-heading;
+    font-family: 'Libre Baskerville';
+    font-size: 18px;
+    display: block;
+    margin-bottom: 20px !important;
+}
+
 p, .link-button {
     line-height: 1.2;
     font-size: 20px;

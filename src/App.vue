@@ -3,6 +3,7 @@
         <navigation></navigation>
         <intro :data="introData"></intro>
         <company :data="companyData"></company>
+        <footer-section></footer-section>
     </main>
 </template>
 
@@ -10,6 +11,7 @@
     import Prismic from 'prismic-javascript';
 
     import Navigation from './components/Navigation';
+    import Footer from './components/Footer';
     import Intro from './sections/Intro';
     import Company from './sections/Company';
     
@@ -17,6 +19,7 @@
     export default {
         components: {
             'navigation': Navigation,
+            'footer-section': Footer,
             'intro': Intro,
             'company': Company
         },
