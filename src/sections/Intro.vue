@@ -1,6 +1,17 @@
 <template>
-    <section>
-        <h1>{{ headline }}</h1>
+    <section class="intro">
+        <div class="text">
+            <h1>{{ headline }}</h1>
+            <p v-if="subheader">{{ subheader }}</p>
+        </div>
+        <div class="companies">
+            <h2>Clients &amp; Projects</h2>
+            <ul class="logos">
+                <li class="logo" v-for="logo in logos">
+                    <img :src="logo.logo.url" :alt="logo.logo.alt">                    
+                </li>
+            </ul>
+        </div>
     </section>
 </template>
 
@@ -12,6 +23,14 @@
             headline() {
                 if (!this.data) return;
                 return this.data.headline[0].text;
+            },
+            subheader() {
+                if (!this.data) return;
+                return this.data.subheader[0].text;
+            },
+            logos() {
+                if (!this.data) return;
+                return this.data.logos;
             }
         }
     }

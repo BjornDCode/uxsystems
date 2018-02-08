@@ -1,0 +1,60 @@
+
+.intro {
+
+    .text {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+    }
+
+    .companies {
+        display: flex;
+        flex-direction: column;
+        padding: 0 15px;
+
+        h2 {
+            margin-bottom: 30px;
+        }
+
+        .logos {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            margin: none;
+
+            .logo {
+                width: 50%;
+                box-sizing: border-box;
+                padding: 15px;
+
+            }
+
+        }
+
+    }
+
+    @include breakpoint (tablet) {
+        height: 100vh;
+
+        .text {
+            height: auto;
+        }
+
+        .companies {
+
+            .logos {
+                max-width: 80%;
+                margin: 0 auto;
+                .logo {
+                    width: 25%;
+                }
+            }
+        }
+
+    }
+
+}

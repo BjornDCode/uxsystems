@@ -1,0 +1,18 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    color: $color-copy;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    color: $color-heading;
+}
