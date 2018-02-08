@@ -39,12 +39,20 @@
 
     @include breakpoint (tablet) {
         height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         .text {
             height: auto;
+            flex: 1;
+            max-width: 500px;
         }
 
         .companies {
+            h2 {
+                text-align: center;
+            }
 
             .logos {
                 max-width: 80%;
