@@ -11,7 +11,7 @@ img {
 }
 
 
-h1, h2, h3, h4, h5, h6 {
+h1 {
     font-family: 'Libre Baskerville', serif;
     font-weight: bold;
     color: $color-heading;
@@ -26,12 +26,25 @@ h1 {
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 28px;
+    font-family: 'Libre Baskerville';
+    color: $color-heading;
 }
 
-p {
-    line-height: 1.5;
-    font-size: 18px;
+h3 {
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+p, .link-button {
+    line-height: 1.2;
+    font-size: 20px;
+
+    @include breakpoint (desktop) {
+        font-size: 25px;
+    }
 }
 
 .button {
@@ -50,4 +63,10 @@ p {
     &:hover {
         box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
     }
+}
+
+.link {
+    color: $color-heading;
+    text-decoration: none;
+    border-bottom: 2px solid $color-green;
 }

@@ -1,5 +1,6 @@
 <template>
     <main>
+        <navigation></navigation>
         <intro :data="introData"></intro>
         <company :data="companyData"></company>
     </main>
@@ -8,11 +9,14 @@
 <script>
     import Prismic from 'prismic-javascript';
 
+    import Navigation from './components/Navigation';
     import Intro from './sections/Intro';
     import Company from './sections/Company';
+    
 
     export default {
         components: {
+            'navigation': Navigation,
             'intro': Intro,
             'company': Company
         },

@@ -1,20 +1,22 @@
 <template>
-    <section class="company">
+    <section class="company" id="company">
         <div class="content">
             <div class="image-container">
                 <img :src="image" alt="Martin Schultz">
                 <span>{{ name }}</span>
                 <span>{{ jobTitle }}</span>
+                <span><a href="tel:45-26-15-61-23" class="link">+45 26 15 61 23</a></span>
+                <span><a href="mailto:ms@ux.systems" class="link">ms@ux.systems</a></span>
             </div>
             <div class="text">
                 <h2>{{ headline }}</h2>
                 <p>{{ subheader }}</p>
-                <a :href="linkedIn.url" class="button">{{ linkedIn.text }}</a>
+                <a :href="linkedIn.url" class="link-button link">{{ linkedIn.text }}</a>
                 <!-- <a href="#" class="button">LinkedIn</a> -->
             </div>
         </div>
         <div class="awards">
-            <h2>Awards</h2>
+            <h2>Industry recognition</h2>
             <ul class="logos">
                 <li class="logo" v-for="logo in logos">
                     <img :src="logo.logo.url" :alt="logo.logo.alt">

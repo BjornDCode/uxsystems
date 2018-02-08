@@ -5,7 +5,7 @@
             <p v-if="subheader">{{ subheader }}</p>
         </div>
         <div class="companies">
-            <h2>Clients &amp; Projects</h2>
+            <h3>Clients &amp; Projects</h3>
             <ul class="logos">
                 <li class="logo" v-for="logo in logos">
                     <img :src="logo.logo.url" :alt="logo.logo.alt">                    

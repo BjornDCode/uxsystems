@@ -2,6 +2,7 @@
 .company {
     margin-top: 100px;
     padding: 0 15px;
+    padding-top: 60px;
     .content {
         display: flex;
         flex-direction: column-reverse;
@@ -15,13 +16,15 @@
 
         .image-container {
             text-align: center;
-            margin-bottom: 50px;
+            margin-bottom: 100px;
             img {
                 max-width: 50%;
                 border-radius: 50%;
             }
             span {
                 display: block;
+                color: $color-heading;
+                margin-bottom: 5px;
             }
         }
     }
@@ -73,6 +76,7 @@
         .content {
             flex: 1;
             align-items: center;
+            margin-bottom: 100px;
 
             .text {
                 flex: 1;
@@ -80,6 +84,13 @@
 
             .image-container {
                 max-width: 400px;
+                transform: translateY(-35px);
+                margin: 0;
+
+                span {
+                    margin: 0;
+                    display: none;
+                }
             }
         }
 
