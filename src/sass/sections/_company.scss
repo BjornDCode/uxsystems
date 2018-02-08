@@ -1,0 +1,39 @@
+
+.company {
+    padding: 0 15px;
+    .content {
+        display: flex;
+        flex-direction: column-reverse;
+
+        .image-container {
+            text-align: center;
+            img {
+                max-width: 50%;
+                border-radius: 50%;
+            }
+            span {
+                display: block;
+            }
+        }
+    }
+
+    .awards {
+        .logos {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            list-style-type: none;
+            padding: 0;
+            margin: none;
+
+            .logo {
+                width: 50%;
+                box-sizing: border-box;
+                padding: 15px;
+
+            }
+
+        }
+    }
+
+}
