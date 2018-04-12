@@ -20,7 +20,7 @@
             <h2>Industry recognition</h2>
             <ul class="logos">
                 <li class="logo" v-for="logo in logos">
-                    <a :href="logo.link.url">
+                    <a :href="logo.link.url" target="_blank">
                         <img :src="logo.logo.url" :alt="logo.logo.alt">
                     </a>
                 </li>
